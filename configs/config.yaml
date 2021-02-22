@@ -1,0 +1,13 @@
+app:
+  server:
+    debug: true
+    host: "0.0.0.0"
+    port: 8000
+    log: "debug"
+
+  databases:
+    default:
+      enable_logger: true
+      driver: "postgres"
+      source: "host=localhost port=5432 user=user dbname=database_name password=database_password sslmode=disable"
+
